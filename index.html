@@ -11,7 +11,7 @@
           $(this).on('click', function(e) {
             e.preventDefault();
             var scrollTo = $(this).attr('href');
-            var whitespace = scrollTo == '#s1' ? 70 : 30;
+            var whitespace = scrollTo == '#top' ? 110 : 30;
             $('html,body').animate({
               scrollTop: $(scrollTo).offset().top - whitespace
             }, 1000);
@@ -23,14 +23,13 @@
   <body>
     <!-- шапка -->
     <div class="menubar">
-      <img src="images/logo.svg" alt="">
-      <a href="">Text</a>
-      <a href="">Text</a>
+      <a href="index.html"><img src="images/logo.svg" alt=""></a>
+      <a href="about.html">О проекте</a>
     </div>
     <!-- боковое меню -->
     <nav class="sidebar">
-      <h2>Содержание</h2>
         <ul>
+          <li><a href="#top">Дом Наркомфина</a></li>
           <li><a href="#1">История</a></li>
           <li><a href="#2">Идеология</a></li>
           <li><a href="#3">Text</a></li>
@@ -49,7 +48,7 @@
     </nav>
     <!-- основной контент -->
     <article>
-      <h1>Дом Наркомфина</h1>
+      <h1 id="top">Дом Наркомфина</h1>
       <p><strong>Дом Наркомфина</strong> — один из знаковых памятников архитектуры советского <a href="https://ru.wikipedia.org/wiki/Авангард_(искусство)">авангарда</a> и <a href="https://ru.wikipedia.org/wiki/Конструктивизм_(искусство)">конструктивизма</a>. Построен в <a href="https://ru.wikipedia.org/wiki/1928_год">1928</a> — <a href="https://ru.wikipedia.org/wiki/1930_год">1930 годах</a> по проекту архитекторов <a href="https://ru.wikipedia.org/wiki/Гинзбург,_Моисей_Яковлевич">Моисея Гинзбурга</a>, <a href="https://ru.wikipedia.org/wiki/Милинис,_Игнатий_Францевич">Игнатия Милиниса</a> и инженера <a href="https://ru.wikipedia.org/wiki/Сергей_Львович_Прохоров">Сергея Прохорова</a> для работников <a href="https://ru.wikipedia.org/wiki/Народный_комиссариат_финансов_СССР">Народного комиссариата финансов СССР</a> (Наркомфина). Автор замысла дома Наркомфина М. Я. Гинзбург определял его как «опытный дом переходного типа». Дом находится в <a href="https://ru.wikipedia.org/wiki/Москва">Москве</a> по адресу: <a href="https://ru.wikipedia.org/wiki/Новинский_бульвар">Новинский бульвар</a>, дом 25, корпус 1.</p>
       <hr>
       <p>Материал из Википедии — свободной энциклопедии</p><br>
